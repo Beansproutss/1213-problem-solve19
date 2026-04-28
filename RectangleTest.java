@@ -19,7 +19,16 @@ public class RectangleTest {
         Rectangle box3 = new Rectangle(box1.intersection(box2));
         System.out.println(box3);
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter width: ");
+
+        System.out.println("Enter width: "); 
+        int width = input.nextInt();
+
+        System.out.println("Enter height: ");
+        int height = input.nextInt();
+
+        double area = box3.getWidth() * box3.getHeight();
+        System.out.println("Area: " + area + "of box 3");
+       
     }
 
 }
